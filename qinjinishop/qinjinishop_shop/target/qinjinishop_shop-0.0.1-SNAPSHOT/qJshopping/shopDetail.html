@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="css/shopDetail.css">   
+    <title>青锦商城</title>
+</head>
+<body>
+	<div class="header">
+		<a href="" class="back">&lt;</a>
+		<ul>
+			<li class="title active"><a href="">商品</a></li>
+			<li class="title"><a href="">详情</a></li>
+			<li class="title"><a href="">评价</a></li>
+		</ul>
+	</div>
+	<div class="section">
+		<!-- 商品页 -->
+		<div class="content active">
+			<!-- 轮播图片 -->
+			<div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"><a href=""><img src="img/img1.png" alt="1" /></a></div>
+		            <div class="swiper-slide"><a href=""><img src="img/img2.png" alt="2" /></a></div>
+		            <div class="swiper-slide"><a href=""><img src="img/img3.png" alt="3" /></a></div>
+		        </div>
+		        <div class="swiper-pagination"></div>
+		    </div>
+		    <div class="contentDetail">
+		    	<div class="price">
+			    	<p class="priceNow">&yen;158</p>
+			    	<p class="priceBefore">原价&yen;250</p>
+			    	<div class="priceOther">
+			    		<span>快递:0.00</span>
+			    		<span>月销30</span>
+			    		<span>浙江杭州</span>
+			    	</div>
+			    </div>
+			    <div class="title">
+			    	<p class="titleDetail">这是商品的标题。。。。。</p>
+			    </div>
+			    <div class="youHui">
+			    	<a href="">领取商城优惠券</a>
+			    	<span class="kuoZhan">...</span>
+			    </div>
+			    <div class="jiFen">
+			    	<a href="">购买可得79积分</a>
+			    	<span class="kuoZhan">...</span>
+			    </div>
+			    <div class="danBao">
+			    	<a href="">极速退货·正品保证·极速退款·曾运费险</a>
+			    	<span class="kuoZhan">...</span>
+			    </div>
+			    <div class="canShu">
+			    	<a href="">产品参数</a>
+			    	<span class="kuoZhan">...</span>
+			    </div>
+			    <div class="sizeColor">
+			    	<a href="">尺码颜色</a>
+			    	<span class="kuoZhan">...</span>
+			    </div>
+			    <div class="pingLun">
+			    	<p>商品评论（163）</p>
+			    	<div class="pingLunDetail">
+			    		<img src="" alt="">
+			    		<span>黑***1</span>
+			    		<p>衣服买来就穿上了，真的很好看，五星好评</p>
+			    		<p>2018-03-08 </p>
+			    	</div>
+			    	<a href="" class="goToPingLun">查看所有评论</a>
+			    </div>
+		    </div>
+		    
+		</div>
+		<!-- 详情页 -->
+		<div class="content">
+			<p>商品详情页</p>
+		</div>
+		<!-- 评论页 -->
+		<div class="content">
+			<p>商品评论页</p>
+		</div>
+	</div>
+	<ul class="shopDetailFooter clear">
+		<li class="keFu"><a href="">客服</a></li>
+		<li class="shouCang"><a href="">收藏</a></li>
+		<li class="dianPu"><a href="">店铺</a></li>
+		<li class="addCar"><a href="">加入购物车</a></li>
+		<li class="goToBuy"><a href="">立即购买</a></li>
+	</ul>
+	<script src="js/jquery-3.2.1.js"></script>
+    <script src="js/swiper-4.1.6.min.js"></script>
+    <script>
+    	var mySwiper = new Swiper ('.swiper-container', {
+            //direction: 'vertical',
+            loop: true,//循环播放
+            auto: 1000,//自动播放的时间
+            autoplay:true,//自动播放
+//            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        })
+        $(".header>ul>li").on("click","a",function(e){
+        	e.preventDefault();
+        	$(this).parent().addClass("active").siblings().removeClass("active");
+        	var i=$(this).parent().index()+1;
+        	$(".section").children(".content:nth-child("+i+")").addClass("active").siblings().removeClass("active");
+        })
+        $(".back").click(function(e){
+        	e.preventDefault();
+        	history.go(-1);
+        })
+    </script>
+</body>
+</html>

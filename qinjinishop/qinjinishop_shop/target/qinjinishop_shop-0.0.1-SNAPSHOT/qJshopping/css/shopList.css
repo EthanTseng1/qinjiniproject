@@ -1,0 +1,80 @@
+.section_title>.head{
+
+    padding:5px 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.section_title{
+    margin-bottom:0px;
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index: 100;
+}
+.section_title>.head>a.search{
+    width:80%;
+    height:30px;
+    background-color:#efefef;
+    border:none;
+    box-shadow: none;
+    line-height: 30px;
+    font-size:16px;
+    color:gray;
+}
+.section_title>.head>a{
+    display: inline-block;
+    text-align: center;
+    font-size:12px;
+
+}
+.section_title>.head>a.back{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    font-size:16px;
+}
+.section{
+    margin-top: 91px;
+}
+.section>.swiper-container {
+    width: 100%;
+}
+.section>.swiper-container .swiper-slide>a>img{
+    width:100%;
+}
+
+/*可滑动的导航条的样式*/
+.wrapper01 {position:relative;height:50px;width: 100%;overflow: hidden;margin:0 auto;border-bottom:1px solid #ccc}
+.wrapper01 .scroller {position:absolute}
+.wrapper01 .scroller li {color:#333;float: left;text-align: center;width:50px;}
+.wrapper01 .scroller li a{color:#333;display:block;font-size:8px;}
+.wrapper01 .scroller li.cur a{color:#1cbb9b;}
+.wrapper01 .scroller li a>img{
+    width:30px;
+}
+/*可滑动的导航条的样式*/
+.section_01{
+    background-color: rgb(250,250,250);
+    box-shadow: none;
+}
+.section_01>ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section_01>ul>li{
+    width:49%;
+    background-color: #fff;
+    margin-top: 8px;
+}
+.section_01>ul>li>a{
+    box-sizing: border-box;
+    display:inline-block;
+    width:100%;
+    margin-bottom:5px;
+    padding:2px;
+}
+.section_01>ul>li>a>img{
+    width:100%;
+}
+

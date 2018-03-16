@@ -1,0 +1,116 @@
+.section{
+	background-color: #fff;
+}
+.section_01>div.head{
+	background-color: #f7f7f7;
+	padding:20px 30px;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.section_01>div.head>img{
+	border-radius: 50%;
+	width:50px;
+	height: 50px;
+	background-color: #f8b62c;
+}
+.section_01>div.head>.head_name{
+	margin-left:20px;
+}
+.section_01>div.head>.head_name>.qianDao{
+	background-color:#f8b62c; 
+	border-radius: 5px;
+	font-size: 12px;
+}
+.section_01>div.order,.section_02{
+	padding:20px 30px;
+}
+.section_01>div.order>ul{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.section_01>div.order>ul>li>a{
+	display: inline-block;
+	padding-top:50px;
+	background: url(../img/bg.jpg) no-repeat;
+	background-size:400px 560px;
+}
+.section_01>div.order>ul>li>a{
+	font-size:14px;
+}
+.section_01>div.order .waitPay{
+	background-position:-10px -10px;
+}
+.section_01>div.order .waitShop{
+	background-position:-97px -10px;
+}
+.section_01>div.order .alreadyShop{
+	background-position:-182px -10px;
+}
+.section_01>div.order .waitEvaluate{
+	background-position:-268px -10px;
+}
+.section_01>div.order .alterSale{
+	background-position:-345px -10px;
+}
+.section_02{
+	margin-bottom:60px;
+}
+.section_02>ul.container{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding:0;
+}
+.section_02>ul.container>li{
+	width:75px;
+	text-align: center;
+}
+.section_02>ul.container>li>a{
+	width:100%;
+	text-align: center;
+	display: inline-block;
+	padding-top:50px;
+	background:url(../img/bg.jpg) no-repeat;
+	background-size:400px 560px;
+	margin-top:5px;
+}
+.section_02>ul.container>li>a.pinTuan{
+	 background-position:12px -75px;
+}
+.section_02>ul.container>li>a.yaoQing{
+	background-position:-104px -75px;
+}
+.section_02>ul.container>li>a.youHui{
+	background-position:-219px -75px;
+}
+.section_02>ul.container>li>a.hongBao{
+	background-position:-336px -75px;
+}
+.section_02>ul.container>li>a.huiYuan{
+	background-position:5px -155px;
+}
+.section_02>ul.container>li>a.jiFen{
+	background-position:-107px -155px;
+}
+.section_02>ul.container>li>a.zuJi{
+	background-position:-221px -155px;
+}
+.section_02>ul.container>li>a.shouCang{
+	background-position:-336px -155px;
+}
+.section_02>ul.container>li>a.chongZhi{
+	background-position:10px -238px;
+}
+.section_02>ul.container>li>a.diZhi{
+	background-position:17px -320px;
+}
+.section_02>ul.container>li>a.keFu{
+	background-position:-99px -320px;
+}
+.section_02>ul.container>li>a.help{
+	background-position:-216px -320px;
+}
+.section_02>ul.container>li>a.set{
+	background-position:-334px -320px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="css/shopList.css">
+    <title>青锦商城</title>
+</head>
+<body>
+    <div class="section_title">
+        <div class="head">
+            <a href="" class="back">&lt;</a>
+            <a href="search.html" class="search">全场八折放肆购</a>
+        </div>
+        <div class="wrapper wrapper01" id="retr">
+            <div class="scroller">
+                <ul class="clearfix">
+                    <li><a href="javascript:void(0)" class="starShop">
+                            <img src="img/shop_type.png">
+                            <p>明星商品</p>
+                        </a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="importeMarket">
+                        <img src="img/shop_type.png">
+                        <p>进口超市</p>
+                    </a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="homeHouse">
+                        <img src="img/shop_type.png">
+                        <p>家居馆</p>
+                    </a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="beautyMake">
+                        <img src="img/shop_type.png">
+                        <p>美妆馆</p>
+                    </a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="momBaby">
+                        <img src="img/shop_type.png">
+                        <p>母婴馆</p>
+                    </a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="cloth">
+                        <img src="img/shop_type.png">
+                        <p>服装馆</p>
+                    </a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="member">
+                        <img src="img/shop_type.png">
+                        <p>会员用户</p>
+                    </a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="pinTuan">
+                        <img src="img/shop_type.png">
+                        <p>拼团</p>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="invite">
+                            <img src="img/shop_type.png">
+                            <p>邀请好友</p>
+                        </a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="allShop">
+                        <img src="img/shop_type.png">
+                        <p>全部商品</p>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href=""><img src="img/img1.png" alt="1" /></a></div>
+                <div class="swiper-slide"><a href=""><img src="img/img2.png" alt="2" /></a></div>
+                <div class="swiper-slide"><a href=""><img src="img/img3.png" alt="3" /></a></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="section_01">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/shop.jpg" alt="">
+                        <h4>商品的title</h4>
+                        <span>&yen;85.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shop.jpg" alt="">
+                        <h4>商品的title</h4>
+                        <span>&yen;85.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shop.jpg" alt="">
+                        <h4>商品的title</h4>
+                        <span>&yen;85.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shop.jpg" alt="">
+                        <h4>商品的title</h4>
+                        <span>&yen;85.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shop.jpg" alt="">
+                        <h4>商品的title</h4>
+                        <span>&yen;85.00</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="js/swiper-4.1.6.min.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/navbarscroll.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            //direction: 'vertical',
+            loop: true,//循环播放
+            auto: 1000,//自动播放的时间
+            autoplay:true,//自动播放
+//            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        })
+        $('.wrapper').navbarscroll();
+        $(".back").click(function(e){
+            e.preventDefault();
+            history.go(-1);
+        })
+    </script>
+</body>
+</html>

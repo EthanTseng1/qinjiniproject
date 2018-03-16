@@ -1,0 +1,91 @@
+.section{
+    background-color: #fff;
+    box-shadow: none;
+}
+.section>div:nth-child(1){
+    padding:5px 0px;
+    text-align: center;
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px gray;
+}
+div>a.search{
+    display: inline-block;
+    background-color:#efefef;
+    width:80%;
+    height:30px;
+    border:none;
+    outline: none;
+    font-size:16px;
+    line-height: 30px;
+    border-radius:5px;
+    color:gray;
+}
+
+ul.sortTitle{
+    position:fixed;
+    top:45px;
+    left:0;
+    width:20%;
+    text-align: center;
+    background-color: #fff;
+}
+ul.sortTitle>li{
+    height:30px;
+    line-height: 30px;
+}
+ul.sortTitle>li>a{
+    font-size: 16px;
+}
+ul.sortTitle>li.on{
+    border-left:4px solid red;
+    background-color: rgb(250,250,250);
+}
+ul.sortTitle>li.on>a{
+    color:red;
+}
+div.sortContent{
+    width:80%;
+    margin-top: 45px;
+    margin-left:20%;
+    background-color:rgb(250,250,250);
+}
+div.sortContent>div.content{
+    display:none;
+}
+div.sortContent>div.content.on{
+    display:block;
+}
+
+div.sortContent>div.content>ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:5px;
+}
+div.sortContent>div.content>ul>li{
+    width:49%;
+    background-color: #fff;
+    margin-top: 8px;
+}
+div.sortContent>div.content>ul>li>a{
+    box-sizing: border-box;
+    display:inline-block;
+    width:100%;
+    margin-bottom:5px;
+    padding:2px;
+}
+div.sortContent>div.content>ul>li>a>img{
+    width:100%;
+}
+div.sortContent>div.content>ul{
+    margin-bottom:60px;
+}
+div.sortContent>div.content>h3{
+    text-align: center;
+    font-weight: normal;
+    height:30px;
+    line-height: 30px;
+}

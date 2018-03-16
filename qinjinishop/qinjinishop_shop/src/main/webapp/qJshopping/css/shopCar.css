@@ -1,0 +1,146 @@
+.redact{
+	height: 40px;
+	line-height: 40px;
+	font-size:16px;
+	background-color:#fff;
+	margin-bottom: 10px;
+	position: fixed;
+	top:0;
+	width:100%;
+	box-shadow: 0px 0px 1px gray;
+	z-index: 100;
+}
+.redact>span{
+	margin-left:20px;
+}
+.redact>a{
+	float:right;
+	margin-right:20px;
+}
+.shopList{
+	margin-top: 40px;
+	margin-bottom: 116px;
+}
+.shopItem{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding:20px;
+	background-color: #fff;
+	margin-bottom: 5px;
+	box-shadow: 1px 0px 1px 0px #aaa;
+	position: relative;
+}
+.shopItem>.shopInfo{
+	width:60%;
+	display: none;
+}
+.shopItem>div.active{
+	display: block;
+}
+.shopItem>.controlCount{
+	width:60%;
+	font-size:0;
+	display: inline-block;
+	margin-top: 5px;
+	display: none;
+	position:relative;
+}
+.shopItem>.controlCount>button,.shopItem>.controlCount>.count{
+	background:transparent;
+	box-shadow: none;
+	outline: none;
+	width:30px;
+	height:30px;
+	border:1px solid gray;
+	display: inline-block;
+	font-size:10px;
+	position: absolute;
+	top:50%;
+	margin-top: -15px;
+	left:20px;
+}
+
+.shopItem>.controlCount>.count{
+	height:28px;
+	left:50px;
+}
+.shopItem>.controlCount>.jia{
+	left:80px;
+}
+.shopItem>.controlCount>.delet{
+	position:absolute;
+	right: 0;
+	top: 0;
+	width:15px;
+	height: 15px;
+	color:#a1a1a1;
+}
+.shopItem>.controlCount>.count{
+	border-left:none;
+	border-right: none;
+	text-align: center;
+}
+.shopItem>.shopInfo>.price{
+	color:red;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.shopItem>.select{
+	width:20px;
+	height:20px;
+	background:url(../img/select.png) no-repeat;
+	background-size:20px;
+	position: absolute;
+	margin-top: -10px;
+	top:50%;
+}
+.redact>.select{
+	height:20px;
+	line-height:20px;
+	display:inline-block;
+	padding-left:30px;
+	background:url(../img/select.png) no-repeat;
+	background-size:20px;
+}
+span.select.on{
+	background:url(../img/selecton.png) no-repeat;
+	background-size:20px;
+}
+.shopItem>a.shopImg{
+	width:20%;
+/*	border:1px solid #efefef;*/
+	margin-left: 15%;
+}
+.shopItem>a.shopImg>img{
+	width:100%;
+}
+.shopItem>.shopInfo>.xingHao{
+	font-size:12px;
+	color:#a1a1a1;
+}
+.total{
+	background-color: #fff;
+	height:40px;
+	line-height: 40px;
+	position:fixed;
+	bottom:66px;
+	width:100%;
+	box-shadow: 0px 0px 1px gray;
+}
+.total>.totalPrice{
+	color:red;
+}
+.total>span,.total>a{
+	display: inline-block;
+	float:right;
+	margin-left: 5px;
+}
+.total>a.castAccount{
+	background-color: #9a3f3d;
+	width:20%;
+	color:#fff;
+	font-size: 15px;
+	text-align: center;
+}

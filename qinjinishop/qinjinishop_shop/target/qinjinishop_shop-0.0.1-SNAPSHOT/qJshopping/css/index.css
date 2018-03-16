@@ -1,0 +1,311 @@
+
+.section_title>.head{
+    display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+	padding:5px 5px;
+}
+.section_title{
+    margin-bottom:0px;
+    position:fixed;
+    width:100%;
+    z-index:100;
+    top:0;
+    background-color: #fff;
+}
+.section_title>.head>a.search{
+	width:75%;
+	height:30px;
+    line-height: 30px;
+    background-color:#efefef;
+    border:none;
+    box-shadow: none;
+    border-radius: 4px;
+    text-align: center;
+    color:gray;
+}
+.section_title>.head>a{
+    display: inline-block;
+    text-align: center;
+    font-size:12px;
+
+
+}
+.section_title>.head>a.saoMa{
+    padding-top:18px;
+    background:url(../img/bg.jpg) no-repeat;
+    background-size:400px 480px;
+    background-position:-5px -292px;
+
+}
+.section_title>.head>a.news{
+    padding-top:18px;
+    background:url(../img/bg.jpg) no-repeat;
+    background-size:300px 360px;
+    background-position:-176px -164px;
+    position:relative;
+}
+.section_title>.head>a.news>span{
+    position: absolute;
+    width:6px;
+    height:6px;
+    border-radius: 50%;
+    background-color: red;
+    top:0px;
+    right:6px;
+    display:none;
+}
+.section_title>.head>a.news>span.on{
+    display:block;
+}
+.section_title>.tab>ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:center;
+    padding:0 15px;
+}
+.section_title>.tab>ul>li{
+    height:100%;
+    text-align: center;
+    padding-top:10px;
+}
+.section_title>.tab>ul>li>a{
+    font-size:18px;
+    line-height: 100%;
+}
+.section_title>.tab>ul>li.active{
+    border-bottom: 2px solid #9a3f3d;      
+}
+.section_title>.tab>ul>li.active>a{
+    color:#9a3f3d;
+}
+
+.section{
+    margin-bottom: 70px;
+}
+.section>.content{
+    display:none;
+}
+.section>div.content.active{
+    display: block;
+}
+.swiper-container {
+    width: 100%;
+    margin-top:72px;
+}
+.swiper-container .swiper-slide>a>img{
+    width:100%;
+}
+.tuiJian>.section_01>.shopping_type>ul.box{
+	display: flex;
+    flex-wrap: wrap;
+	padding:20px;
+}
+.tuiJian>.section_01{
+    background-color: #fff;
+}
+.tuiJian>.section_01>.shopping_type>ul.box>li{
+    width:20%;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.tuiJian>.section_01>.shopping_type>ul.box>li>a{
+    font-size:12px;
+}
+.tuiJian>.section_01>.shopping_type>ul.box>li.item>a{
+    display: inline-block;
+    text-align: center;
+}
+.tuiJian>.section_01>.shopping_type>ul.box>li.item>a>img{
+    margin-bottom: 10px;
+    width:35px;
+
+}
+.tuiJian>.section_02{
+    padding:30px;
+    text-align: center;
+    background-color: #fff;
+}
+.tuiJian>.section_02>h4.title{
+    text-align:center;
+    color:#9a3f3d;
+    font-size:16px;
+    font-weight: normal;
+}
+.tuiJian>.section_02>div.content{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin:20px 0;
+}
+.tuiJian>.section_02>div.content>a{
+    text-align: center;
+}
+.tuiJian>.section_02>div.content>a>img{
+    margin-bottom: 10px;
+}
+.tuiJian>.section_02>div.content>a>span{
+    color:red;
+}
+.tuiJian>.section_02>div.content>a{
+    width:30%;
+    text-align: center;
+}
+
+.tuiJian>.section_02>div.content>a:nth-child(1){
+    width:40%;
+    border-right: 1px solid red;
+}
+.tuiJian>.section_02>div.content>a>img{
+    width:70%;
+}
+
+.tuiJian>.section_02>a.goTo{
+    display: inline-block;
+    background-color: #c9bc9c;
+    border-radius: 5px;
+    font-size: 16px;
+    padding:5px 10px;
+    color:#fff;
+}
+[class^="section"]>.top{
+    height:50px;
+    position:relative;
+    line-height: 50px;
+    padding:0 20px;
+    font-size: 20px;
+    color:#9a3f3d;
+}
+[class^="section"]>.top>a{
+    position:absolute;
+    right:20px;
+    font-size: 10px;
+}
+/*.section_03>.content{*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+/*}*/
+.tuiJian>.section_03>.content>li,.section_04>.content>li{
+    float:left;
+    width:50%;
+    text-align: center;
+    border:2px solid #fff;
+    box-sizing: border-box;
+}
+.tuiJian>.section_03{
+    background-color: #fff;
+}
+.tuiJian>.section_03>.content>li:nth-child(1){
+    width:100%;
+}
+.tuiJian>.section_03>.content a,.section_04>.content a{
+    display:inline-block;
+    width:100%;
+}
+.tuiJian>.section_03>.content a>img,.section_04>.content a>img{
+    width:100%;
+}
+.tuiJian>.section_04{
+    background-color: #fff;
+}
+.tuiJian>.section_05{
+    padding:20px 0px;
+    background-color: #fff;
+}
+.tuiJian>.section_05>div.title,.section_06>h4.title{
+    text-align: center;
+    font-size:16px;
+    color:#9a3f3d;
+}
+.tuiJian>.section_05>div.title>span:not(:first-child){
+    display:inline-block;
+    background-color:#9a3f3d;
+    border-radius: 50%;
+    font-size:12px;
+    width:20px;
+    padding:2px;
+    color: #fff;
+}
+.tuiJian>.section_05>.content{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.tuiJian>.section_05>.content a{
+    box-sizing: border-box;
+    display:inline-block;
+    text-align: center;
+    width:100%;
+    border:2px solid #fff;
+}
+.tuiJian>.section_05>.content a>img{
+    margin-bottom: 10px;
+    width:100%;
+}
+.tuiJian>.section_05>.content a>span{
+    color:red;
+}
+
+
+
+
+/*猜你喜欢的样式*/
+/*.section>.content>ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:5px;
+    margin-bottom:60px;
+}
+.section>.content>ul>li{
+    width:49%;
+}
+.section>.content>ul>li>a{
+    box-sizing: border-box;
+    display:inline-block;
+    width:100%;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 1px  gray;
+    padding:2px;
+}
+.section>.content>ul>li>a>img{
+    width:100%;
+    height:200px;
+}
+*/
+
+/*修改热款爆品的样式*/
+.section_06>h4.title{
+    font-size: 16px;
+    font-weight: normal;
+}
+.section_06{
+    background-color: rgb(250,250,250);
+    box-shadow: none;
+    padding-top: 10px;
+}
+.shopList{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.shopList>.shopItem{
+    width:49%;
+    background-color: #fff;
+    margin-top: 8px;
+}
+.shopList>.shopItem>a{
+    box-sizing: border-box;
+    display:inline-block;
+    width:100%;
+    margin-bottom:5px;
+    padding:2px;
+}
+.shopList>.shopItem>a>img{
+    width:100%;
+}
+

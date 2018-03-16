@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <title>青锦商城</title>
+</head>
+<body>
+    <div class="header">
+        <a href="" class="back">&lt;</a>
+        <input type="text" placeholder="输入搜索商品">
+        <a href="searchDetail.html" class="searchBtn">搜索</a>
+    </div>
+    <div class="section">
+    	<p class="tuiJian">为你推荐</p>
+        <ul class="tuiJianContent">
+            <li><a href="">裤子男</a></li>
+            <li><a href="">蓝牙音箱</a></li>
+            <li><a href="">春装新款</a></li>
+            <li><a href="">外星人</a></li>
+            <li><a href="">九分裤</a></li>
+            <li><a href="">眼镜</a></li>
+        </ul>
+    </div>
+    <script src="js/flexible.debug.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script>
+        $(".back").click(function(e){
+            e.preventDefault();
+            history.go(-1);
+        })
+    </script>
+</body>
+</html>

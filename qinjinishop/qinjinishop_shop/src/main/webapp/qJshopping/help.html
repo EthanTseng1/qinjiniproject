@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/address.css">
+    <title>青锦商城</title>
+    <style>
+        .header{
+            width: 100%;
+            height:40px;
+            box-shadow: 0px 0px 1px gray;
+            position: fixed;
+            top:0;
+            line-height: 40px;
+            padding:0px 10px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="" class="back">&lt;&nbsp;帮助</a>
+    </div>
+    <div class="section">
+        这是帮助页面，
+        有什么需要帮助的请联系我们
+        tel:12345678900
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script>
+        $(".back").click(function(e){
+            e.preventDefault();
+            history.go(-1);
+        })
+    </script>
+</body>
+</html>

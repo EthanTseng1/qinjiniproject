@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    color:#666;
+    font:12px "simhei",Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    background-color:rgb(250,250,250);
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    vertical-align:middle;
+}
+a{
+    font-size:14px;
+    color:#666;
+    text-decoration:none;
+}
+a:hover{
+    color:#0aa1ed;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.lf{float:left;}
+.rt{float:right;}
+
+
+
+/*页脚样式*/
+.footer{
+    width:100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #aaa;
+    position:fixed;
+    bottom:0;
+}
+.footer>ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding:10px 20px;
+
+}
+.footer>ul>li>a{
+    display:inline-block;
+    padding-top:30px;
+    background:url(../img/bg.jpg) no-repeat;
+    background-size:400px 560px;
+}
+.footer>ul>li>a.home{
+    background-position:-4px -406px;
+}
+.footer>ul>li>a.sort{
+    background-position:-94px -406px;
+}
+.footer>ul>li>a.find{
+    background-position:-182px -406px;
+}
+.footer>ul>li>a.car{
+    background-position:-262px -406px;
+}
+.footer>ul>li>a.center{
+    background-position:-360px -406px;
+}
+.footer>ul>li>a.on{
+    color:red;
+}
+.footer>ul>li>a.home.on{
+    background-position:-4px -472px;
+}
+.footer>ul>li>a.sort.on{
+    background-position:-94px -472px;
+}
+.footer>ul>li>a.find.on{
+    background-position:-182px -472px;
+}
+.footer>ul>li>a.car.on{
+    background-position:-262px -472px;
+}
+.footer>ul>li>a.center.on{
+    background-position:-360px -472px;
+}
+/*页脚样式*/
+
+
+/*基础的主体单个模块的样式*/
+[class^="section"]{
+    box-shadow: 0px 0px 1px 0px #aaa;
+    margin-bottom:5px;
+}
+/*基础的主体单个模块的样式*/
+
+
